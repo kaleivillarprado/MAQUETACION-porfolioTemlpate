@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<html>
+    <head>
+      <title>Porfolio template</title>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" width="100%">
+    <link rel="stylesheet" href="css\index.css">
+    <link rel="icon" type="image/png" sizes="android-chrome-192x192" href="assets/Favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="android-chrome-512x512" href="assets/Favicons/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="apple-touch-icon" href="assets/Favicons/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script src="js/script.js"></script>
+        <script src="https://kit.fontawesome.com/c3fd22b8e3.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>  
+
+<body>
+  <div class="menu-icon" onclick="openMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+ <header>
+    <section id="landing">
+      <div id="cover">
+        <video autoplay muted loop id="cover-animation">
+          <source src="assets/cover-animation.mp4" type="video/mp4">
+        </video>
+        <h1>Porfolio Template</h1>
+        <h3>UDIT 2025</h3>
+      </div>
+      
+      
+     <div id="home-disciplinas">
+       
+          <div>
+          <figure onclick="abrirModal(this)"  data-aos="zoom-in" >
+            <h4 class="centered">INVESTIGACIÓN</h4>
+            <img src="assets/imgs/research.jpg" alt="Libro abierto Research" >
+          </figure>
+          <figure onclick="abrirModal(this)"  data-aos="zoom-in">
+            <h4 class="centered">PRODUCCIÓN</h4>
+            <img src="assets/imgs/produccion.jpg" alt="Performance Producción">
+          </figure>
+          <figure onclick="abrirModal(this)"  data-aos="zoom-in"> 
+            <h4 class="centered">MEDIACIÓN</h4>
+            <img src="assets/imgs/mediacion.jpg" alt="Estudio Mediación">
+          </figure>
+            </div>
+      </div>
+   </section>
+    <div>
+    <nav class="menu" id="menu">
+        <ul>
+            <blockquote class="button-entradas"><li><a href="entradas.html" onclick="closeMenu()"><h4>Entradas</h4></a></li></blockquote>
+            <blockquote class="button-programacion"><li><a href="#programacion" onclick="closeMenu()"><h4>Programación</h4></a></li> </blockquote>
+            <blockquote class="button-about"><li><a href="#about" onclick="closeMenu()"><h4>About</h4></a></li></blockquote>
+            <blockquote class="button-contacto"><li><a href="#contacto"><h4>Contacto</h4></a></li></blockquote>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+      </ul>
+    </nav>
+    </div>
+</header>
+
+<main>
+  
+  <footer>
+    
+    
+  </footer>
+            </div>
+        </main>
+
+    </body>
+
+</html>

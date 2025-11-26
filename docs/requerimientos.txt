@@ -1,0 +1,153 @@
+1-REPOSITORIO Y CONTROL DE VERSIONES
+    -Repositorio en GitHub con nombre claro y descriptivo (por ejemplo, portfolio-template-2025)
+    -Mensajes de commit significativos siguiendo un estilo tipo Conventional Commits
+    -.gitignore completo (excluye node_modules/, .DS_Store, configuraciones de IDE, etc.)
+    -Tag de Git para la entrega final: v1.0.0
+    -GitHub Release creado a partir del tag con notas de versión
+
+
+2-DESPLIEGUE
+    -Hosting en GitHub Pages con URL pública y accesible
+    -Página 404 personalizada con navegación de vuelta a inicio
+    -HTTPS activado (automático en GitHub Pages)
+    -Verificación del despliegue (todos los assets cargan, sin enlaces rotos)
+
+
+3. Documentación
+    -README.md con:
+        Enlace al despliegue en la primera línea
+        Descripción y propósito del proyecto
+        Stack tecnológico utilizado
+        Instrucciones de configuración para desarrollo local
+        Guía de personalización
+        Capturas de pantalla o GIF de demo
+        Créditos y agradecimientos
+        Declaración de IA
+    -LICENSE en la raíz (elige MIT, Apache 2.0 o CC BY-NC-SA 4.0 — recomendada: MIT)
+    -Archivos mínimos obligatorios (todos los niveles):
+        README.md
+        LICENSE
+        .gitignore
+        404.html (página de error personalizada)
+        docs/plan1.md (si usas IA para cualquier feature; crea plan2.md, plan3.md, etc. según necesites)
+    -Recomendado:
+        CONTRIBUTING.md si otras personas pueden bifurcar o contribuir
+
+
+4. DISEÑO RESPONSIVE (fluido + elástico + intrínseco)
+    -Enfoque mobile-first con mejora progresiva
+    -Tipografía fluida usando clamp() para una escala suave
+    -Layouts elásticos que se adaptan al contexto del contenedor
+    -Diseño intrínseco con CSS Grid auto-fit y Container Queries (cuando estén soportadas)
+    -Efectos de parallax y scroll integrados en la estrategia de layout
+    -Pruebas en distintos breakpoints: móvil (320px-480px), tablet (481px-768px), escritorio (769px+)
+
+
+5. SEMÁNTICA Y ESTRUCTURA HTML5
+    -HTML5 semántico (<header>, <nav>, <main>, <article>, <section>, <footer>)
+    -Jerarquía de encabezados correcta (un solo <h1>, estructura lógica <h2>–<h6>)
+    -Formularios accesibles con <label> asociado y atributos ARIA cuando sea necesario
+    -Estructura de directorios coherente
+
+
+6. METADATOS E IDENTIDAD VISUAL
+Referencia: Lección de Metadatos e Identidad Visual
+    -Metadatos completos en <head>:
+    -Título, descripción, palabras clave
+    -Open Graph (Facebook/LinkedIn)
+    -Twitter Card
+    -Meta viewport
+    -Meta theme-color
+    -Favicon (varios tamaños: 16×16, 32×32, 180×180 para Apple Touch)
+    -Manifest.json (opcional pero recomendable para preparación PWA)
+    -Identidad visual consistente: paleta de color, tipografía, iconografía
+
+
+7. CALIDAD DE CÓDIGO Y ESTÁNTARES
+Referencia: Lección de Linting y Formateo
+    -Prettier para formato consistente
+    -ESLint para linting de JavaScript (o JSHint como mínimo)
+    -Stylelint para CSS (opcional pero recomendable)
+    -Sin errores de consola en la versión desplegada
+    -Código comentado explicando la lógica o decisiones de diseño complejas
+    -Organización CSS: variables, reset, layout, componentes, utilidades
+    -Organización JavaScript: funciones claras, sin contaminar el espacio global
+
+
+8. ACCESIBILIDAD BÁSICA
+(Nota: la accesibilidad completa se tratará el siguiente semestre. Por ahora, céntrate en lo fundamental.)
+    -Contraste de color que cumpla WCAG AA (4.5:1 para texto de cuerpo)
+    -prefers-reduced-motion para desactivar animaciones cuando el usuario lo solicite
+    -Texto alternativo en todas las imágenes con significado
+    -Navegación por teclado funcional en los elementos interactivos
+    -Enlace de «saltar al contenido» para lectores de pantalla (opcional pero apreciado)
+    -Componentes técnicos a implementar
+    -Animación e interactividad
+    -Elige las técnicas adecuadas para tu nivel:
+
+-----------------------------
+Animaciones CSS (todos los niveles)
+Referencia: Lección de Animaciones CSS
+    -Transiciones para estados hover, interacciones de botones
+    -Animaciones con @keyframes para entrada del hero, estados de carga
+    -Animaciones ligadas al scroll (CSS moderno con animation-timeline: scroll())
+    -Animaciones con GSAP (Grados 2 y 3)
+    -Referencia: Lección de GSAP
+    
+Timelines para secuencias complejas
+    -ScrollTrigger para reveals y efectos de parallax
+    -SplitText para efectos tipográficos (opcional, plugin premium)
+
+
+Tipografía
+Referencia: Lección de Tipografía y Color
+    -Sistema tipográfico fluido con clamp():
+    -Stack de sistema o como máximo 2–3 familias de tipografía web bien elegidas
+    -Interlineados responsivos
+
+
+Tendencias de diseño (elige 2–3)
+Referencia: Lección de Tendencias Modernas de Diseño Web
+    -Glassmorphism: efecto de vidrio esmerilado con backdrop-filter: blur()
+    -Neumorphism: soft UI con sombras sutiles (usar con moderación)
+    -Parallax: diferentes velocidades de scroll para dar profundidad
+    -Modo oscuro: toggle con custom properties + estado en JavaScript
+    -Fondos en gradiente: transiciones modernas y vibrantes
+    -Scroll-snapping: navegación por secciones
+    -Micro‑interacciones: pequeñas animaciones de placer al interactuar
+    -Patrones de componentes
+
+
+Navegación
+    -Menú responsive (hamburguesa en móvil)
+    -Scroll suave a secciones
+    -Indicación de estado activo
+    -Posicionamiento fijo/pegajoso (opcional)
+
+Sección Hero
+    -Titular y subtítulo convincentes
+    -Botón de llamada a la acción
+    -Imagen o gradiente de fondo
+    -Indicador de scroll (opcional)
+
+Sección About
+    -Breve biografía o presentación
+    -Grid de habilidades o tecnologías
+    -Opcional: foto de perfil con efecto hover
+
+Grid de Proyectos/Portfolio
+    -Layout con CSS Grid o Flexbox
+    -Tarjetas de proyecto con imágenes
+    -Efectos hover (o modales) que revelan información
+    -Enlaces a demos en vivo y repos de código
+
+Sección de Contacto
+    -Formulario de contacto (puedes usar Formspree) o enlace mailto
+    -Enlaces a redes sociales
+    -Información de localización o disponibilidad (opcional)
+
+Footer
+    -Aviso de copyright
+    -Enlaces rápidos
+    -Botón para volver arriba (opcional)
+    -Enlace al repositorio en GitHub
