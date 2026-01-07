@@ -1,0 +1,739 @@
+<section class="body-neo">
+      <div class="card">Neumorphic Card</div>
+    <button class="button">Click Me</button>
+    </section>
+a > h4 {
+  color: var(--resources);
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+/*botonera*/
+.button-entradas {
+    border-color: var(--admission)
+}
+.button-entradas > li > a > h4 {
+  color: var(--admission);
+  text-decoration: none;
+  text-align: center;
+}
+.button-entradas:hover  > li > a> h4{
+    background-color: var(--admission);
+    color: var(--foreground);
+}
+
+
+.button-programacion {
+    border-color: var(--headline)
+}
+.button-programacion > li > a > h4 {
+  color: var(--headline);
+  text-decoration: none;
+  text-align: center;
+}
+.button-programacion:hover > li > a> h4{
+    background-color: var(--headline);
+    color: var(--foreground);
+}
+
+
+.button-about {
+    color:var(--about);
+    border-color: var(--about)
+}
+.button-about > li >a > h4 {
+  color: var(--about);
+  text-decoration: none;
+  text-align: center;
+}
+.button-about:hover > li > a> h4{
+    background-color: var(--about);
+    color: var(--foreground);
+}
+
+.button-contacto {
+    color:var(--contacto);
+    border-color: var(--contacto)
+}
+
+.button-contacto > li > a > h4 {
+  color: var(--contacto);
+  text-decoration: none;
+  text-align: center;
+}
+
+.button-contacto:hover > li > a> h4{
+    background-color: var(--contacto);
+    color: var(--foreground);
+}
+section {
+    min-height: 100vh;
+    width: 80%;
+    max-width: 1500px;
+    padding: 4em;
+    margin: 0 auto;
+}
+
+section > div > #items > div{
+    margin: 2em;
+}
+
+ :root { 
+  --distancia-iconos: 1rem;
+  --tamano-texto-menu: 2rem;
+  --fuente-titulo: 'Workbench', sans-serif;
+  --fuente-texto: 'Rubik Storm', system-ui;
+
+ }
+
+.workbench {
+  font-family: "Workbench", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+}
+
+.rubik-storm-regular {
+  font-family: "Rubik Storm", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-texto);
+    scroll-behavior: smooth;
+}
+
+#cover-animation {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+}
+
+#general {
+    overflow-x:wrap;
+    background-image: url(../img/ruled.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*GLITCH*/
+@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
+
+.glitch {
+    font-size: 4rem;
+    position: relative;
+    text-transform: lowercase;
+    color: white;
+    animation: glitch 1s infinite;
+    font-family: var(--fuente-titulo);
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background: black;
+    background-size: auto;
+    overflow: hidden;
+}
+
+.glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 red;
+    clip: rect(0, 0, 0, 0);
+    animation: glitch-before 0.5s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 blue;
+    clip: rect(0, 0, 0, 0);
+    animation: glitch-after 0.5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch {
+    0% { transform: skew(0deg); }
+    20% { transform: skew(-5deg); }
+    40% { transform: skew(5deg); }
+    60% { transform: skew(-5deg); }
+    80% { transform: skew(5deg); }
+    100% { transform: skew(0deg); }
+}
+
+@keyframes glitch-before {
+    0% { clip: rect(10px, 9999px, 50px, 0); }
+    100% { clip: rect(30px, 9999px, 80px, 0); }
+}
+
+@keyframes glitch-after {
+    0% { clip: rect(20px, 9999px, 60px, 0); }
+    100% { clip: rect(40px, 9999px, 90px, 0); }
+}
+/*------------*/
+
+/*neomorfismo*/
+body {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     height: 100vh;
+    background: #e0e5ec;
+    font-family: Arial, sans-serif;
+    z-index: 4;
+}       
+.card {
+    width: 250px;
+    height: 150px;
+    background: #e0e5ec;
+     border-radius: 20px;
+    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+ }
+.button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    background: #e0e5ec;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #babecc, -5px -5px 10px #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:active {
+box-shadow: inset 5px 5px 10px #babecc, inset -5px -5px 10px #ffffff;
+}
+
+/*----------------*/
+
+figcaption {
+    text-align: justify;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 4em;
+    font-size: 0.8em;
+}
+
+footer > p:not(:first-child) {
+    padding-left: 1em;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 > a,
+h2,
+h3 {
+    font-family: var(--fuente-titulo);
+    color: red;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+ header {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: calc(-100vh + 3em);
+    z-index: 1;
+    background-image: url(../img/mantones.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header > p {
+    font-size: 12vw;
+    width: 2em;
+    margin-left: 1rem;
+    color:red;
+    mix-blend-mode:color-dodge;
+}
+
+
+
+ #terceros {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: calc(-100vh + 3em);
+    z-index: 1;
+    background-image: url(../img/calle1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header > p {
+    font-size: 12vw;
+    width: 2em;
+    margin-left: 1rem;
+    color:red;
+    mix-blend-mode:color-dodge;
+}
+
+
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+#items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+#items > div {
+    width: 100%;
+    margin: 1em;
+    display: flex;
+    padding: 2em 0;
+}
+
+#items > div > figure {
+    width: 100%;
+    position: relative;
+    margin: 2em;
+    cursor: pointer;
+}
+
+#items > h4 {
+    color: red;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+.centered {
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-weight: 550;
+  color: darkred;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  mix-blend-mode:hard-light;
+  font-size: 2em;
+  text-align: center;
+}
+
+.logo {
+    font-family: var(--fuente-titulo);
+    font-weight: normal;
+}
+
+.logo > strong {
+    font-family: var(--fuente-titulo);
+    font-weight: bold;
+}
+
+#madriz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+#madriz > div:first-child {
+    width: 50%;
+}
+
+#madriz > div:last-child {
+    width: 70%;
+}
+
+#madriz > div:last-child > p {
+    margin-top: 1em;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+
+#menu {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    z-index: 5;
+}
+
+#menu > div:first-child > i,
+#menu > div:first-child > ul > li:last-child {
+    display: none;
+}
+
+#menu > div:first-child > ul {
+    width: 30em;
+    padding: 0;
+    display: flex;
+    justify-content:space-around;
+}
+
+#menu > div:first-child > ul > li {
+    list-style: none;
+}
+
+#menu > div:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu > div:nth-child(2) > i {
+    cursor: pointer;
+}
+
+#menu > h1 > a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+#menu > div > i,
+#menu > div > ul > li > a,
+#menu > div > i,
+#menu > h1 > a {
+    color: white;
+}
+
+
+
+
+#modal {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal > figure {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#modal > figure > * {
+    width: 50%;
+    max-width: 600px;
+    align-self: center;
+}
+
+#modal > i {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+}
+
+.titol {
+    font-family: var(--fuente-titulo);
+}
+
+/* ------------------------------ */
+/*         MOBILE ≤ 480px          */
+/* ------------------------------ */
+@media (max-width: 480px) {
+
+    header > p {
+        font-size: 20vw;
+        width: auto;
+        margin-left: .5rem;
+    }
+
+    #menu {
+        padding: 0 .5em;
+    }
+
+    #menu > div:first-child > ul {
+        display: none; /* hide nav menu */
+    }
+
+    #menu > div:first-child > i {
+        display: block; /* show ☰ icon */
+        font-size: 1.8rem;
+        color: white;
+    }
+
+
+    #items {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    #items > div {
+        margin: 1em 0;
+        padding: 1em 0;
+    }
+
+    .centered {
+        font-size: 1.3em;
+    }
+
+    #madriz {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #madriz > div:first-child,
+    #madriz > div:last-child {
+        width: 100%;
+    }
+
+    #madriz > div:last-child > p {
+        font-size: 1.1rem;
+    }
+
+    #modal > figure {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    #modal > figure > * {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* ------------------------------ */
+/*         TABLET ≤ 768px          */
+/* ------------------------------ */
+@media (max-width: 768px) {
+
+    header > p {
+        font-size: 15vw;
+    }
+
+     #menu > div:first-child > i {
+        display: block;
+        cursor: pointer;
+    }
+
+    #menu > div:first-child > ul {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        padding: 30% 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition-duration: 1s;
+    }
+
+    #menu > div:first-child > ul > li > a {
+        text-decoration: none;
+        font-size: 2em;
+    }
+
+    #menu > div:first-child > ul > li:last-child {
+        display: block;
+        position: absolute;
+        right: 2em;
+        top: 2em;
+    }
+
+    #menu > div:first-child > ul > li:last-child > i {
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+
+    section {
+        width: 90%;
+        padding: 3em 1.5em 1.5em;
+        flex-wrap: wrap;
+    }
+
+    #items > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #items > div > figure {
+        margin: 1em 0;
+    }
+
+    #madriz {
+        gap: .5em;
+        flex-direction: column;
+    }
+
+    #madriz > div:first-child,
+    #madriz > div:last-child {
+        width: 100%;
+    }
+
+    #modal > figure {
+        width: 85%;
+    }
+
+    #modal > figure > * {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    #menu > div:first-child > i {
+        display: block;
+        cursor: pointer;
+    }
+
+    #menu > div:first-child > ul {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        padding: 30% 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition-duration: 1s;
+    }
+
+    #menu > div:first-child > ul > li > a {
+        text-decoration: none;
+        font-size: 2em;
+    }
+
+    #menu > div:first-child > ul > li:last-child {
+        display: block;
+        position: absolute;
+        right: 2em;
+        top: 2em;
+    }
+
+    #menu > div:first-child > ul > li:last-child > i {
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+
+    section {
+        width: 100%;
+        padding: 2em;
+        padding-top: 4em;
+        position: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #modal > figure {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #modal > figure > * {
+        width: 80%;
+        margin: 1rem 0;
+        align-items: center;
+    }
+
+    #items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+
+}
+
+    #items > div {
+    width: 100%;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2em 0;
+    align-items: center;
+}
+
+    #items > div > figure {
+    width: 100%;
+    position:center;
+    margin: 2em;
+    cursor: pointer;
+}
+
+#items > h4 {
+    color: red;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+.centered {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-weight: 550;
+  color: darkred;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  mix-blend-mode:hard-light;
+  font-size: 2em;
+  text-align: center;
+}
+}
+
