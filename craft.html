@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>antiporfolio</title>
+    <title>craft</title>
     <meta charset="utf-8">
     <link href="assets\css\base.css"rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
@@ -22,10 +22,11 @@
 </head>
 
 <body>
-  <div class="menu-icon" onclick="openMenu()">
-    <i class="fa-solid fa-bars"></i>
   </div>
   <header>
+    <div id="landing">
+    <div class="glitch" data-text="craft"> craft </div>
+      </div>
     <nav class="menu" id="menu">
       <div>
         <i class="fas fa-bars" onclick="openMenu()"></i>
@@ -34,7 +35,7 @@
             <a href="manifesto.html" onclick="closeMenu()">Manifesto</a>
           </li>
           <li>
-            <a href="craft.html" onclick="closeMenu()">Craft</a>
+            <a class="anti" href="index.html" onclick="closeMenu()">antiporfolio</a>
           </li>
           <li>
             <a href="how.html" onclick="closeMenu()">How</a>
@@ -46,30 +47,56 @@
         </div> 
     </nav>
     <section>
-      <div class="intro">
-        <h2>“A socially aware graphic design should be able to look beyond industrial preset and towards created shared social spaces of creativity
-          and knowledge, accessible to everyone. [...] A move towards a non-capitalist practice of design will therefore have to question the very basics of how design
-          is practised. [...] Searching for alternatives towards ways of working together that strengthen social bonds and relations instead of breaking them”</h2>
-          <h4>Pater, R. (2021). CAPS LOCK: How Capitalism Took Hold of Graphic Design, and How to Escape from It</h4>
+    <div class="content">
+        <p>this section has been developed for showcasing your craft, text and images are only a guide, feel free to replace them as you wish- </p>
       </div>
-      <div id="landing">
-      <div class="glitch" data-text="antiporfolio antiporfolio antiporfolio ">antiporfolio antiporfolio antiporfolio  </div>
+      
+    </section>
+  </header>
+  <section class="craft">
+        <div id="items">
+        <div id="modal-imagen">
+          <figure onclick="abrirModal(this)"  data-aos="zoom-in" >
+            <h4 class="centered">what's your community?</h4>
+            <img src="assets/craft (1).jpeg" alt="Sample image of a flower" >
+            <figcaption>
+              <p>Here you can showcase values and origin story </p>
+            </figcaption>
+          </figure>
+          <figure onclick="abrirModal(this)"  data-aos="zoom-in">
+            <h4 class="centered">how does your community work?</h4>
+            <img src="assets/craft (2).jpeg" alt="Sample image with a black background and a sign that says number 88 below some flaky composition">
+            <figcaption>
+              <p>Here you can showcase your creative process</p>
+            </figcaption>
+            </figure>
+          <figure onclick="abrirModal(this)"  data-aos="zoom-in"> 
+            <h4 class="centered">what does your community do?</h4>
+            <img src="assets/craft (3).jpeg" alt="Sample image of a rounded fossil stone">
+            <figcaption>
+              <p>Here you can showcase projects your community has developed or a work in progress.</p>
+            </figcaption>
+          </figure>
+            </div>
       </div>
-      <div class="background"></div>
+    </section>
+    <div id="modal-imagen">
+            <figure>
+                <img src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            
+        </div>
+        <div class="background-craft"></div>
       </div>
-      </div>
-
-   </section>
-   </header>
-   <footer>
+      <footer>
       <section>
       <p> 2026 antiporfolio is under the creative commons liscense</p>
     </section>  
     </footer>
-     
-   <script>
-    const background = document.querySelector(".background");
 
+   <script>
+    const background = document.querySelector(".background-craft");
     document.addEventListener("mousemove", (e) => {
       const x = (e.clientX / window.innerWidth) * 100;
       const y = (e.clientY / window.innerHeight) * 100;

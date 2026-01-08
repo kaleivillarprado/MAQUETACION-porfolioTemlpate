@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>antiporfolio</title>
+    <title>manifesto</title>
     <meta charset="utf-8">
     <link href="assets\css\base.css"rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
@@ -26,16 +26,21 @@
     <i class="fa-solid fa-bars"></i>
   </div>
   <header>
+    <div id="landing">
+    <div class="glitch" data-text="manifesto"> manifesto </div>
+      </div>
+      
     <nav class="menu" id="menu">
       <div>
         <i class="fas fa-bars" onclick="openMenu()"></i>
         <ul>
           <li>
-            <a href="manifesto.html" onclick="closeMenu()">Manifesto</a>
+            <a class="anti" href="index.html" onclick="closeMenu()">antiporfolio</a>
           </li>
           <li>
             <a href="craft.html" onclick="closeMenu()">Craft</a>
           </li>
+          
           <li>
             <a href="how.html" onclick="closeMenu()">How</a>
           </li>
@@ -46,29 +51,32 @@
         </div> 
     </nav>
     <section>
-      <div class="intro">
-        <h2>“A socially aware graphic design should be able to look beyond industrial preset and towards created shared social spaces of creativity
-          and knowledge, accessible to everyone. [...] A move towards a non-capitalist practice of design will therefore have to question the very basics of how design
-          is practised. [...] Searching for alternatives towards ways of working together that strengthen social bonds and relations instead of breaking them”</h2>
-          <h4>Pater, R. (2021). CAPS LOCK: How Capitalism Took Hold of Graphic Design, and How to Escape from It</h4>
+      
+      <section>
+      <div class="content">
+        <p>Within the design industry there has always been a claim for 'outside-the-box' thinking, but it is very few companies that look for that, instead we are being fed
+          multi-purpose roles that claim to be different only signifying that they want design flexibility that stays within the realm of capitalism, no questioning or evolving
+           towards collective creation. </p>
+          <aside class="quote">
+            <h3 class="h3-manifesto">The success of corporativism masked as profesionalism only aims to make uniform workers who don't question what or who they're working for.
+            “don’t oversimplify or flatten your identity just to seem relevant or “universal.” (Maakaroun S, 2025)Deseo, J. (2025, June 10). ‘In-Betweener’ Samar Maakaroun on
+            embracing cultural fluency and complexity in design. PRINT Magazine.</h3>
+          </aside>
+          <p>antiporfolio, ALL LOWERCASE also to divert from the rules of grammar and so called: language education; aims to focus on the craft of collectivity, creation through
+            humane methods and alternative workflows and pathways that showcase the influence design has on community building and societal shaping.</p></aside>
       </div>
-      <div id="landing">
-      <div class="glitch" data-text="antiporfolio antiporfolio antiporfolio ">antiporfolio antiporfolio antiporfolio  </div>
+      <div class="background-manifesto"></div>
       </div>
-      <div class="background"></div>
-      </div>
-      </div>
-
    </section>
-   </header>
-   <footer>
+   </header> 
+    <footer>
       <section>
       <p> 2026 antiporfolio is under the creative commons liscense</p>
     </section>  
     </footer>
      
    <script>
-    const background = document.querySelector(".background");
+    const background = document.querySelector(".background-manifesto");
 
     document.addEventListener("mousemove", (e) => {
       const x = (e.clientX / window.innerWidth) * 100;

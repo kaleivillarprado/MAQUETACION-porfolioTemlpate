@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>antiporfolio</title>
+    <title>how</title>
     <meta charset="utf-8">
     <link href="assets\css\base.css"rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
@@ -37,7 +37,7 @@
             <a href="craft.html" onclick="closeMenu()">Craft</a>
           </li>
           <li>
-            <a href="how.html" onclick="closeMenu()">How</a>
+            <a class="anti" href="index.html" onclick="closeMenu()">antiporfolio</a>
           </li>
           <li>
           <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
@@ -45,17 +45,16 @@
         </ul>
         </div> 
     </nav>
-    <section>
-      <div class="intro">
-        <h2>“A socially aware graphic design should be able to look beyond industrial preset and towards created shared social spaces of creativity
-          and knowledge, accessible to everyone. [...] A move towards a non-capitalist practice of design will therefore have to question the very basics of how design
-          is practised. [...] Searching for alternatives towards ways of working together that strengthen social bonds and relations instead of breaking them”</h2>
-          <h4>Pater, R. (2021). CAPS LOCK: How Capitalism Took Hold of Graphic Design, and How to Escape from It</h4>
+    <section class="how">
+      <div>
+        <h2>antiporfolio was created for the community</h2>
+        <h2>antiporfolio can be used, distributed and reproduced by anybody except the following:</h2>
+          <h3>billionaries</h3>
+          <h3>corporations that exploit workers</h3>
+          <h3>anybody who does not comply with freedom of speech, human rights and the liberation of the global south</h3>
       </div>
       <div id="landing">
-      <div class="glitch" data-text="antiporfolio antiporfolio antiporfolio ">antiporfolio antiporfolio antiporfolio  </div>
-      </div>
-      <div class="background"></div>
+      <div class="background-how"></div>
       </div>
       </div>
 
@@ -68,7 +67,7 @@
     </footer>
      
    <script>
-    const background = document.querySelector(".background");
+    const background = document.querySelector(".background-how");
 
     document.addEventListener("mousemove", (e) => {
       const x = (e.clientX / window.innerWidth) * 100;

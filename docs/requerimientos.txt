@@ -1,5 +1,5 @@
 1-REPOSITORIO Y CONTROL DE VERSIONES
-    -Repositorio en GitHub con nombre claro y descriptivo (por ejemplo, portfolio-template-2025)
+DONE Repositorio en GitHub con nombre claro y descriptivo (por ejemplo, portfolio-template-2025)
     -Mensajes de commit significativos siguiendo un estilo tipo Conventional Commits
     -.gitignore completo (excluye node_modules/, .DS_Store, configuraciones de IDE, etc.)
     -Tag de Git para la entrega final: v1.0.0
@@ -9,7 +9,7 @@
 2-DESPLIEGUE
     -Hosting en GitHub Pages con URL pública y accesible
     -Página 404 personalizada con navegación de vuelta a inicio
-    -HTTPS activado (automático en GitHub Pages)
+DONE HTTPS activado (automático en GitHub Pages)
     -Verificación del despliegue (todos los assets cargan, sin enlaces rotos)
 
 
@@ -44,40 +44,40 @@
 
 
 5. SEMÁNTICA Y ESTRUCTURA HTML5
-    -HTML5 semántico (<header>, <nav>, <main>, <article>, <section>, <footer>)
-    -Jerarquía de encabezados correcta (un solo <h1>, estructura lógica <h2>–<h6>)
-    -Formularios accesibles con <label> asociado y atributos ARIA cuando sea necesario
-    -Estructura de directorios coherente
+DONE HTML5 semántico (<header>, <nav>, <main>, <article>, <section>, <footer>)
+DONE Jerarquía de encabezados correcta (un solo <h1>, estructura lógica <h2>–<h6>)
+DONE Formularios accesibles con <label> asociado y atributos ARIA cuando sea necesario
+DONE Estructura de directorios coherente
 
 
 6. METADATOS E IDENTIDAD VISUAL
 Referencia: Lección de Metadatos e Identidad Visual
-    -Metadatos completos en <head>:
+DONE Metadatos completos en <head>:
     -Título, descripción, palabras clave
     -Open Graph (Facebook/LinkedIn)
     -Twitter Card
-    -Meta viewport
+DONE Meta viewport
     -Meta theme-color
     -Favicon (varios tamaños: 16×16, 32×32, 180×180 para Apple Touch)
     -Manifest.json (opcional pero recomendable para preparación PWA)
-    -Identidad visual consistente: paleta de color, tipografía, iconografía
+DONE Identidad visual consistente: paleta de color, tipografía, iconografía
 
 
 7. CALIDAD DE CÓDIGO Y ESTÁNTARES
 Referencia: Lección de Linting y Formateo
-    -Prettier para formato consistente
-    -ESLint para linting de JavaScript (o JSHint como mínimo)
-    -Stylelint para CSS (opcional pero recomendable)
+DONE Prettier para formato consistente
+DONE ESLint para linting de JavaScript (o JSHint como mínimo)
+DONE Stylelint para CSS (opcional pero recomendable)
     -Sin errores de consola en la versión desplegada
     -Código comentado explicando la lógica o decisiones de diseño complejas
-    -Organización CSS: variables, reset, layout, componentes, utilidades
+DONE Organización CSS: variables, reset, layout, componentes, utilidades
     -Organización JavaScript: funciones claras, sin contaminar el espacio global
 
 
 8. ACCESIBILIDAD BÁSICA
 (Nota: la accesibilidad completa se tratará el siguiente semestre. Por ahora, céntrate en lo fundamental.)
-    -Contraste de color que cumpla WCAG AA (4.5:1 para texto de cuerpo)
-    -prefers-reduced-motion para desactivar animaciones cuando el usuario lo solicite
+DONE Contraste de color que cumpla WCAG AA (4.5:1 para texto de cuerpo)
+DONE prefers-reduced-motion para desactivar animaciones cuando el usuario lo solicite
     -Texto alternativo en todas las imágenes con significado
     -Navegación por teclado funcional en los elementos interactivos
     -Enlace de «saltar al contenido» para lectores de pantalla (opcional pero apreciado)
