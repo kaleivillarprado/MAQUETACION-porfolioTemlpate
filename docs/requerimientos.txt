@@ -1,6 +1,6 @@
 1-REPOSITORIO Y CONTROL DE VERSIONES
 DONE Repositorio en GitHub con nombre claro y descriptivo (por ejemplo, portfolio-template-2025)
-    -Mensajes de commit significativos siguiendo un estilo tipo Conventional Commits
+DONE Mensajes de commit significativos siguiendo un estilo tipo Conventional Commits
     -.gitignore completo (excluye node_modules/, .DS_Store, configuraciones de IDE, etc.)
     -Tag de Git para la entrega final: v1.0.0
     -GitHub Release creado a partir del tag con notas de versión
@@ -14,7 +14,7 @@ DONE HTTPS activado (automático en GitHub Pages)
 
 
 3. Documentación
-    -README.md con:
+DONE-README.md con:
         Enlace al despliegue en la primera línea
         Descripción y propósito del proyecto
         Stack tecnológico utilizado
@@ -23,14 +23,14 @@ DONE HTTPS activado (automático en GitHub Pages)
         Capturas de pantalla o GIF de demo
         Créditos y agradecimientos
         Declaración de IA
-    -LICENSE en la raíz (elige MIT, Apache 2.0 o CC BY-NC-SA 4.0 — recomendada: MIT)
-    -Archivos mínimos obligatorios (todos los niveles):
+DONE-LICENSE en la raíz (elige MIT, Apache 2.0 o CC BY-NC-SA 4.0 — recomendada: MIT)
+DONE Archivos mínimos obligatorios (todos los niveles):
         README.md
         LICENSE
         .gitignore
         404.html (página de error personalizada)
         docs/plan1.md (si usas IA para cualquier feature; crea plan2.md, plan3.md, etc. según necesites)
-    -Recomendado:
+DONERecomendado:
         CONTRIBUTING.md si otras personas pueden bifurcar o contribuir
 
 

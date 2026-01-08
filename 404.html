@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>antiporfolio</title>
+    <meta charset="utf-8">
+    <link href="assets\css\base.css"rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Storm&display=swap" rel="stylesheet">
+    <link href="img/favicon.png" rel="icon" type="image/png">
+    <script src="https://kit.fontawesome.com/c3fd22b8e3.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="menu-icon" onclick="openMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <header>
+    <nav class="menu" id="menu">
+      <div>
+        <i class="fas fa-bars" onclick="openMenu()"></i>
+        <ul>
+            <li>
+            <a class="anti" href="index.html" onclick="closeMenu()">antiporfolio</a>
+          </li>
+          <li>
+            <a href="manifesto.html" onclick="closeMenu()">Manifesto</a>
+          </li>
+          <li>
+            <a href="craft.html" onclick="closeMenu()">Craft</a>
+          </li>
+          <li>
+            <a href="how.html" onclick="closeMenu()">How</a>
+          </li>
+          <li>
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </li>
+        </ul>
+        </div> 
+    </nav>
+    <section>
+      <div class="fourofour">
+        <h2>Why are you here?</h2>
+          <h4>Do you wish this page existed?</h4>
+      </div>
+      <div id="landing">
+      <div class="glitch" data-text="eror 404 error 404 error 404">eror 404 error 404 error 404  </div>
+      </div>
+      <div class="background-404"></div>
+      </div>
+      </div>
+
+   </section>
+   </header>
+   <footer>
+      <section>
+      <p> 2026 antiporfolio is under the creative commons liscense</p>
+    </section>  
+    </footer>
+     
+   <script>
+    const background = document.querySelector(".background-404");
+
+    document.addEventListener("mousemove", (e) => {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      background.style.transform = `translate(-${x / 2}%, -${y / 2}%)`;
+    });
+  </script>
+</body></html>
